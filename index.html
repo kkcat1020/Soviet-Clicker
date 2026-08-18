@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<title>ソビエトクリッカー</title>
+<title>クリッカー</title>
 <style>
   *{box-sizing:border-box;}
   html,body{
@@ -184,9 +184,9 @@ const popImgSrc = POP_IMAGE_SRC || defaultCircleDataUri("#ff9a9a", "#e0453f");
 const preloadPopImg = new Image();
 preloadPopImg.src = popImgSrc;
 
-// ---- ローディング画面(7秒でゆっくり0%→100%) ----
+// ---- ローディング画面(6秒でゆっくり0%→100%) ----
 // 音声プールの準備やレスポンス調整の時間を確保しつつ、見た目もシンプルに
-const LOADING_DURATION_MS = 7000;
+const LOADING_DURATION_MS = 6000;
 const loadingEl = document.getElementById("loading");
 const loadingPercentEl = document.getElementById("loadingPercent");
 const loadingFillEl = document.getElementById("loadingFill");
